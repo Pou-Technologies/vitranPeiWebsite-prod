@@ -2,40 +2,34 @@
 $pageTitle = "Contact"; // Define el título de la página
 include '../includes/header.php';
 ?>
-<!-- Recaptcha -->
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script>
-    function onSubmit(token) {
-        document.getElementById("contactForm").submit();
-    }
-</script>
 
 
 
 
 
 <section class="py-5 contact-hero-section" style="background-image: url('/images/general/contactBgForm.png');">
-    <div class="container h-100 d-flex flex-column justify-content-center py-5">
-        <!-- Hero Section -->
-        <section class="contact-hero text-center">
-            <div class="container">
-                <h1 class="mb-4 text-black fw-bold">Contact Us</h1>
-                <p class="lead text-secondary">We'd love to hear from you! Get in touch for inquiries, questions, or feedback.</p>
-            </div>
-        </section>
+  <div class="container h-100 d-flex flex-column justify-content-center py-5">
+    <!-- Hero Section -->
+    <section class="contact-hero text-center">
+      <div class="container">
+        <h1 class="mb-4 text-black fw-bold">Contact Us</h1>
+        <p class="lead text-secondary">We'd love to hear from you! Get in touch for inquiries, questions, or feedback.
+        </p>
+      </div>
+    </section>
 
-        <!-- Contact Form Section -->
-        <section class="contact-section text-center">
-            <div class="container">
-                <main class="py-5 w-100 d-flex justify-content-center">
-                    <div class="col-lg-8 col-md-10 col-sm-12">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/contact-form.php'; ?>
-                    </div>
-                </main>
-            </div>
-        </section>
-    </div>
+    <!-- Contact Form Section -->
+    <section class="contact-section text-center">
+      <div class="container">
+        <main class="py-5 w-100 d-flex justify-content-center">
+          <div class="col-lg-8 col-md-10 col-sm-12">
+            <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/contact-form.php'; ?>
+          </div>
+        </main>
+      </div>
+    </section>
+  </div>
 </section>
 
 
@@ -80,7 +74,7 @@ include '../includes/header.php';
         <div class="p-4 bg-opacity-75 rounded shadow-lg">
           <h2 class="mb-4 fw-bold text-uppercase border-bottom pb-2 text-black">Announcements</h2>
           <h3 class="text-black fw-bold"><i class="bi bi-geo-alt-fill me-3 fs-5 text-primary"></i>Summerside:</h3>
-          <p class="text-black">Delivery every Tuesday and Thursday.  </p>
+          <p class="text-black">Delivery every Tuesday and Thursday. </p>
         </div>
       </div>
     </div>

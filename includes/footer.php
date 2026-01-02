@@ -51,9 +51,9 @@
     <!-- Divider -->
     <hr class="border-light">
 
-    <!-- Bottom note -->
+      <!-- Bottom note -->
     <div class="text-center pb-3">
-      <small>© 2025 Vitran Delivery Services. All rights reserved.</small>
+      <small>© <?php echo date("Y"); ?> Vitran Delivery Services. All rights reserved.</small>
     </div>
 
     <!--POU TECH LOGO -->
@@ -64,7 +64,7 @@
           <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
         </svg>
         by <a class="text-secondary fw-bold" href="https://poutechnologies.com" target="_blank">Pou Technologies</a>.
-        Version:  1.0.1
+        Version:  1.0.2
       </p>
     </div>
 
@@ -81,87 +81,8 @@
 <!-- Cookies -->
 <script src="../style/js/cookies.js"> </script>
 
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    // Verifica el estado del formulario
-    const formStatus = urlParams.get('form_status');
-
-    switch (formStatus) {
-      case 'success':
-        Swal.fire({
-          title: "Message Sent!",
-          text: "Thank you for reaching out. We will get back to you soon.",
-          icon: "success"
-        });
-        break;
-
-      case 'error':
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-          footer: '<a href="pages/faqs.html">Why do I have this issue?</a>'
-        });
-        break;
-
-      case 'missing':
-        Swal.fire({
-          title: "Are there any fields left unfilled?",
-          text: "Please fill in all required fields before submitting.",
-          icon: "warning",
-          confirmButtonText: "OK"
-        });
-        break;
-
-      case 'captcha_error':
-        Swal.fire({
-          title: "Captcha Not Verified",
-          text: "Please complete the captcha verification before submitting.",
-          icon: "warning",
-          confirmButtonText: "OK"
-        });
-        break;
-
-      default:
-        // Maneja estados desconocidos o faltantes (opcional)
-        console.warn("No valid form_status provided.");
-        break;
-    }
-  });
-
-
-
-
-
-// Verifica si el usuario ya cerró el aviso
-// function checkTestBanner() {
-//     return localStorage.getItem('testBannerClosed') === 'true';
-// }
-
-// Muestra el banner si no se ha cerrado
-// function showTestBanner() {
-//     const banner = document.getElementById('test-banner');
-//     if (!checkTestBanner()) {
-//         banner.style.display = 'block';
-//     }
-// }
-
-// Cierra el banner y guarda la preferencia
-// document.getElementById('close-test-banner').addEventListener('click', function() {
-//     const banner = document.getElementById('test-banner');
-//     banner.style.display = 'none';
-//     localStorage.setItem('testBannerClosed', 'true');
-// });
-
-// Mostrar al cargar la página
-// document.addEventListener('DOMContentLoaded', showTestBanner);
-
-
-</script>
-
+<!-- Main JS -->
+<script src="/style/js/main.js"></script>
 
 </body>
 
