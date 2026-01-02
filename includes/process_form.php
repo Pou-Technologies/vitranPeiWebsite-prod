@@ -64,8 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Detectar entorno para definir destinatario
     $serverName = $_SERVER['SERVER_NAME'];
 
-    // Si estamos en QA (subdominio qa.) o en local (localhost)
-    if (strpos($serverName, 'qa.') !== false || strpos($serverName, 'localhost') !== false) {
+    // Si estamos en QA (subdominio qa. o qa404) o en local (localhost)
+    if (strpos($serverName, 'qa.') !== false || strpos($serverName, 'qa404') !== false || strpos($serverName, 'localhost') !== false) {
         $to = "test@poutechnologies.com";
     } else {
         // Producción
