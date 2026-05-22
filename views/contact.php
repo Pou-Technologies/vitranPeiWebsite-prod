@@ -74,7 +74,11 @@ include '../includes/header.php';
         <div class="p-4 bg-opacity-75 rounded shadow-lg">
           <h2 class="mb-4 fw-bold text-uppercase border-bottom pb-2 text-black">Announcements</h2>
           <h3 class="text-black fw-bold"><i class="bi bi-geo-alt-fill me-3 fs-5 text-primary"></i>Summerside:</h3>
-          <p class="text-black">Delivery every Tuesday and Thursday. </p>
+          <p class="text-black mb-2">Delivery every Tuesday and Thursday.</p>
+          <div class="d-flex align-items-center text-black bg-white bg-opacity-50 p-2 rounded border-start border-success border-3" style="max-width: 350px;">
+            <i class="bi bi-tag-fill text-success me-2 fs-5"></i>
+            <span>Rate: <strong>$11 + GST</strong> per delivery</span>
+          </div>
         </div>
       </div>
     </div>
